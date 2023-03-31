@@ -1,3 +1,5 @@
+/* Media Queries Mixin
+**********************/
 /* Reboot Codes - Based on normalize.css v5.0.0
 **********************/
 html {
@@ -599,6 +601,30 @@ main {
   margin-left: 10px;
 }
 
+.caja--con-fondo__stats {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+  border-top: none;
+  text-align: center;
+}
+.caja--con-fondo__stats ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.caja--con-fondo__stats li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 50px;
+  opacity: 0.8;
+  color: #FFF;
+}
+.caja--con-fondo__stats i {
+  color: #FFF;
+}
+
 .ubicacion--perfil {
   width: 50%;
   height: 80px;
@@ -963,9 +989,7 @@ main {
 }
 
 .nav--header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   padding-top: 35px;
 }
 .nav--header ul li {
@@ -978,11 +1002,16 @@ main {
   text-transform: uppercase;
   font-weight: 700;
 }
+@media only screen and (min-width: 992px) {
+  .nav--header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .header__busqueda {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
   padding-top: 35px;
 }
@@ -999,6 +1028,13 @@ main {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+}
+@media only screen and (min-width: 992px) {
+  .header__busqueda {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer--principal {
@@ -1050,15 +1086,27 @@ main {
 }
 
 .contenedor--home {
-  height: 1200px;
-  width: 1300px;
-  margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .contenedor--home {
+    height: 1200px;
+    width: 1300px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .caja--grande {

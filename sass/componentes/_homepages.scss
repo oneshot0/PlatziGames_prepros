@@ -1,10 +1,15 @@
 .contenedor--home {
-  height: 1200px;
-  width: 1300px;
-  margin: 0 auto;
-  @include display-grid;
-  @include grid-template-columns(grid-repeat(4));
-  @include grid-template-rows(grid-repeat(4));
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @include media(desktop-s) {
+    height: 1200px;
+    width: 1300px;
+    margin: 0 auto;
+    @include display-grid;
+    @include grid-template-columns(grid-repeat(4));
+    @include grid-template-rows(grid-repeat(4));
+  }
 }
 
 .caja--grande {
