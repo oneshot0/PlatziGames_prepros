@@ -1,13 +1,21 @@
 .intro {
-	width: 1340px;
+	width: 100%;
+	max-width: 1340px;
 	height: 650px;
-	padding: 10px;
 	margin: 0 auto;
 	position: relative;
+
+	@include media(desktop-s) {
+		margin: 20px auto 0;
+	}
+
 	@include caja;
+
 	&__imagen {
-		width: 1320px;
+		width: 100%;
+		padding: 10px;
 		position: absolute;
+
 		img {
 			width: 100%;
 			height: 624px;
@@ -30,6 +38,7 @@
 	}
 	&__titulo {
 		font-size: 50px;
+		line-height: 60px;
 	}
 
 	&__autor {

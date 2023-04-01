@@ -1,26 +1,32 @@
-
 .perfil {
-	width: 50%;
-	padding-top: 50px;
+	width: 100%;
+	padding: 50px 20px;
 	color: $color-claro;
-	background-color: $color-secundario;	
+	background-color: $color-secundario;
+
+	@include media(tablet) {
+		max-width: 600px;
+	}
+
 	&__avatar {
 		display: block;
 		margin: 0 auto;
 		border-radius: 50em;
 	}
+
 	&__nombre {
 		text-align: center;
 		font-size: 25px;
 		@include titulos($Fuente2);
 	}
+
 	&__titulo {
 		display: block;
 		text-transform: uppercase;
 		text-align: center;
 		font-weight: 700;
 		font-size: 12px;
-				// incluir aca
+		// incluir aca
 
 		color: get-opacity($color-claro, .5);
 

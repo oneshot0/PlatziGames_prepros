@@ -1,6 +1,6 @@
 extend componentes/plantilla.pug
 block contenidos
-	main
+	main.caja-perfil
 		section.perfil
 			img(class="perfil__avatar" src="../images/avatar.jpg")
 			h2.perfil__nombre John Wick
@@ -19,8 +19,8 @@ block contenidos
 				h3 227km Cerca
 			.galeria
 				h2 Mis Fotos
-				.galeria__foto-principal: img(src="../images/galeria1.jpg")
-				.galeria__fotos-adicionales
+				.galeria__fotos
+					img(src="../images/galeria1.jpg")
 					img(src="../images/galeria2.jpg" width="160")
 					img(src="../images/galeria3.jpg")
 					img(src="../images/galeria4.jpg")
