@@ -16,7 +16,7 @@ Dentro del curso se implementan varias características de pre-procesadores tant
 * Modularización de archivos para separación de responsabilidades en creación de la aplicación.
 * Compilación de archivos por medio de Prepos.
 ## Resultado
-A continuación se muestra el resultado de la página PlatziGames, si quiere ver la pagina por usted mismo puede entrar al [Siguiente Link](https://oneshot0.github.io/PlatziGames_prepros/html/pagina-principal.html# "Siguiente Link")
+A continuación se muestra el resultado de la página PlatziGames, si quiere ver la pagina por usted mismo puede entrar al [Siguiente Link](https://oneshot0.github.io/PlatziGames_prepros/html/pagina-principal.html "Siguiente Link")
 
 
 
